@@ -36,7 +36,7 @@ sdk目录,需手动sdk下载并引入自己的项目（目前未上传到maven�
             String command=dataWrapper.getCommand();
             /**根据相应处理命令，创建响应报文：*/
             String responseData =DataPacketParser.createResponseContent(dataWrapper);
-            /**获取测量数据*/
+            /**获取测量数据*/
             GlucoseData glucoseData = dataWrapper.getGlucoseData();
             注意：只有当command命令为04和0e时，才有具体的血糖数据
    
