@@ -26,7 +26,7 @@ DeviceDataWrapper 设备数据协议包<br>
 Command 设备命令<br>
 GlucoseData 血糖数据<br>
 
-假如微信推送设备事件DeviceID：gh_d56fe15a43c0_2c0cf8ae16d077e1 Content：U04QAAQEEQQLEBskADYAAM0Yog==
+假如微信推送设备事件DeviceID：gh_d56fe15a43c0_2c0cf8ae16d077e1 Content：U04QAAQEEQQLEBskADYAAM0Yog==<br>
 (deviceId与sn匹配，deviceId是在微信设备授权时候获得的；所以理论上需要存储deviceId与sn的匹配关系)
    
 
