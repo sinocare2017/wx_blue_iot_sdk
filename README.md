@@ -39,7 +39,8 @@ sdk目录,需手动sdk下载并引入自己的项目（目前未上传到maven�
             /**获取测量数据*/
             GlucoseData glucoseData = dataWrapper.getGlucoseData();
             
-  注意：只有当command命令为04和0e时，才有具体的血糖数据，04命令处理完后，立马再次同步一条时间，具体见demo；所有响应给设备的数据，必须通过微信iot平台“主动发送消息给设备”接口调用，详见：http://iot.weixin.qq.com/wiki/new/index.html?page=3-4-3
+ 注意：只有当command命令为04和0e时，才有具体的血糖数据，04命令处理完后，立马再次同步一条时间，具体见demo<br>
+ 所有响应给设备的数据，必须通过微信iot平台“主动发送消息给设备”接口调用，详见：http://iot.weixin.qq.com/wiki/new/index.html?page=3-4-3
    
  
 
