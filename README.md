@@ -20,14 +20,15 @@ sdk目录,需手动sdk下载并引入自己的项目（目前未上传到maven�
 微信推送数据格式为：http://iot.weixin.qq.com/wiki/new/index.html?page=3-4-1
 
 # SDK使用
-sdk相关类说明<br>
-DataPacketParser  协议解析器<br>
-DeviceDataWrapper 设备数据协议包<br>
-Command 设备命令<br>
-GlucoseData 血糖数据<br>
+      sdk相关类说明
+      DataPacketParser  协议解析器
+      DeviceDataWrapper 设备数据协议包
+      Command 设备命令
+      GlucoseData 血糖数据
 
-假如微信推送设备事件DeviceID：gh_d56fe15a43c0_2c0cf8ae16d077e1 Content：U04QAAQEEQQLEBskADYAAM0Yog==<br>
+## 假如微信推送设备事件DeviceID：gh_d56fe15a43c0_2c0cf8ae16d077e1 Content：U04QAAQEEQQLEBskADYAAM0Yog==<br>
 (deviceId与sn匹配，deviceId是在微信设备授权时候获得的；所以理论上需要存储deviceId与sn的匹配关系)
-   
-
+   
+ /*** 
+ DeviceDataWrapper dataWrapper = DataPacketParser.parseDeviceContent(sn, deviceContext);
 
