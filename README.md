@@ -30,8 +30,19 @@ Command 设备命令
   
 GlucoseData 血糖数据
 
-
-
+假如微信推送设备事件数据为：
+    <xml>
+         <ToUserName><![CDATA[%s]]></ToUserName>
+         <FromUserName><![CDATA[%s]]></FromUserName>
+         <CreateTime>%u</CreateTime>
+         <MsgType><![CDATA[%s]]></MsgType>
+         <DeviceType><![CDATA[%s]]></DeviceType>
+         <DeviceID><![CDATA[%s]]></DeviceID>
+         <Content><![CDATA[%s]]></Content>  //设备消息内容
+         <SessionID>%lu</SessionID>
+         <MsgID>%lu</MsgID>
+         <OpenID><![CDATA[%s]]></OpenID>
+     </xml>
 
 
 
