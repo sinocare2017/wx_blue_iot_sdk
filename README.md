@@ -11,25 +11,21 @@ sdk目录,需手动sdk下载并引入自己的项目（目前未上传到maven�
 
 同步时间命令： 06
 
-# sdk使用流程
+# 背景说明
 背景说明：血糖仪通过微信同第三方通信，并且接受第三方的响应指令
 所有的蓝牙血糖仪设备必须到微信iot平台进行授权，并在本地保存好相应的deviceId与sn之间的关系，详见微信iot平台：http://iot.weixin.qq.com/wiki/new/index.html?page=3-4-6
 （微信iot平台接入请参照微信iot开发文档：http://iot.weixin.qq.com/wiki/new/index.html?page=2-1）
 
 一切就绪后，打开手机蓝牙->打开微信公众号->打开血糖仪设备；如若连上，则微信会推送一条(03命令)到自己的服务器：
-微信推送数据格式为：
-<xml>
-         <ToUserName><![CDATA[%s]]></ToUserName>
-         <FromUserName><![CDATA[%s]]></FromUserName>
-         <CreateTime>%u</CreateTime>
-         <MsgType><![CDATA[%s]]></MsgType>
-         <DeviceType><![CDATA[%s]]></DeviceType>
-         <DeviceID><![CDATA[%s]]></DeviceID>
-         <Content><![CDATA[%s]]></Content>  //设备消息内容
-         <SessionID>%lu</SessionID>
-         <MsgID>%lu</MsgID>
-         <OpenID><![CDATA[%s]]></OpenID>
- </xml>
+微信推送数据格式为：http://iot.weixin.qq.com/wiki/new/index.html?page=3-4-1
+
+# SDK使用
+sdk相关类说明
+DataPacketParser  协议解析器
+DeviceDataWrapper 设备数据协议包
+Command 
+GlucoseData
+
 
 
 
