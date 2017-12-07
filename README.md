@@ -21,10 +21,16 @@ sdk目录,需手动sdk下载并引入自己的项目（目前未上传到maven�
 
 # SDK使用
 sdk相关类说明
+
 DataPacketParser  协议解析器
+
 DeviceDataWrapper 设备数据协议包
-Command 
-GlucoseData
+
+Command 设备命令
+  
+GlucoseData 血糖数据
+
+
 
 
 
